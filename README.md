@@ -15,7 +15,7 @@ br.com.siomara.customer:
 5. CustomerRepository
 6. CustomerService
 
-Hibernate:
+**Creating table 'customer' with Hibernate:**
 
     create table customer (
        id int4 not null,
@@ -26,7 +26,7 @@ Hibernate:
     )
 Hibernate: create sequence customer_id_sequence start 1 increment 50
 
-Adding from Postman:
+**Adding new customer with Postman:**
 
 localhost:8080/api/vi/customers
 
@@ -39,6 +39,13 @@ post - body - raw - json
 }
 
 status: 200 OK
+
+**Checking customer insertion on Postgres:**
+
+select * from customer
+
+Successfully run. Total query runtime: 236 msec.
+1 rows affected.
 
 ## Second Microservice
 
