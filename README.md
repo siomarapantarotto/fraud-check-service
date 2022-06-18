@@ -50,3 +50,5 @@ Successfully run. Total query runtime: 236 msec.
 ## Second Microservice
 
 Verifies if customer has a fraud record.
+
+![fraud-module](https://user-images.githubusercontent.com/5893219/174423486-d832b499-a64d-4936-a5ba-96512794fbff.png)
