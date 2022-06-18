@@ -4,9 +4,9 @@ spring:
   application:
     name: customer
   datasource:
-    username: customer
+    username: fraud-check-user
     url: jdbc:postgresql://localhost:5432/customer
-    password: customer
+    password: password
   jpa:
     hibernate:
       ddl-auto: update

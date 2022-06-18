@@ -4,14 +4,14 @@ spring:
   application:
     name: fraud
   datasource:
-    username: fraud
+    username: fraud-check-user
     url: jdbc:postgresql://localhost:5432/fraud
-    password: fraud
-    jpa:
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
       hibernate:
-        ddl-auto: update
-      properties:
-        hibernate:
-          dialect: org.hibernate.dialect.PostgreSQLDialect
-          format_sql: true
-      show-sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
