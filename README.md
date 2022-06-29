@@ -28,7 +28,7 @@ Hibernate: create sequence customer_id_sequence start 1 increment 50
 
 **Adding new customer with Postman:**
 
-localhost:8080/api/vi/customers
+localhost:8080/api/v1/customers
 
 post - body - raw - json
 
